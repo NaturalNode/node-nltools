@@ -37,12 +37,40 @@ Download, fork or clone the code, setup the 2 dependancies below.
 ### Sentence Analyses
   - Break a sentence down into different parts, subject, predicate etc.
  
-## What's Not yet Included
-
-### Wiki Tagger
-  - Pass results though Google for "Best" wiki link or YQL
-    - Notate the POS Object with the attribute.
+## What's Not yet Included aka TODO
 
 ### Sentence Boundary Detection
  - http://www.attivio.com/blog/57-unified-information-access/263-doing-things-with-words-part-two-sentence-boundary-detection.html
  - NLTK Source http://code.google.com/p/nltk/source/browse/trunk/nltk/nltk/tokenize/punkt.py
+
+### Sentiment Analysis
+ - http://en.wikipedia.org/wiki/Sentiment_analysis
+ 
+### Implement YAGO (in lue of WikiPedia)
+ - http://www.mpi-inf.mpg.de/yago-naga/yago/
+ 
+## Other NODE Projects of Interest
+ - http://harthur.github.com/brain/
+
+## MIT License
+
+Copyright (c) 2011 Rob Ellis
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
