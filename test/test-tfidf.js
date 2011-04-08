@@ -60,34 +60,23 @@ exports.testAddCorpus = function(test) {
 		DEFAULT_IDF_UNITTEST,
 		function(my_tfidf) {	
 
-			test.expect(3);
+			test.expect(7);
 			test.ok(get_exected_idf(my_tfidf.get_num_docs(), 1));
 			test.ok(DEFAULT_IDF_UNITTEST,my_tfidf.get_idf("water"));
-			// test.ok(get_exected_idf(my_tfidf.get_num_docs(), 1));
+			
+			test.equal(get_exected_idf(my_tfidf.get_num_docs(), 1), my_tfidf.get_idf("moon"));
+			test.equal(get_exected_idf(my_tfidf.get_num_docs(), 5), my_tfidf.get_idf("said"));
 			
 			my_tfidf.add_input_document("water, moon")			
+
+			test.equal(get_exected_idf(my_tfidf.get_num_docs(), 1),my_tfidf.get_idf("water"))
+			test.equal(get_exected_idf(my_tfidf.get_num_docs(), 2),my_tfidf.get_idf("moon"))
+			test.equal(get_exected_idf(my_tfidf.get_num_docs(), 5),my_tfidf.get_idf("said"))
+			
 			test.done();
 		}
 	);			
 }
-/*
-
-self.assertAlmostEquals(get_exected_idf(my_tfidf.get_num_docs(), 1),
-
-  my_tfidf.get_idf("moon"))
-self.assertAlmostEquals(get_exected_idf(my_tfidf.get_num_docs(), 5),
-  my_tfidf.get_idf("said"))
-
-my_tfidf.add_input_document("water, moon")
-
-self.assertAlmostEquals(get_exected_idf(my_tfidf.get_num_docs(), 1),
-  my_tfidf.get_idf("water"))
-self.assertAlmostEquals(get_exected_idf(my_tfidf.get_num_docs(), 2),
-  my_tfidf.get_idf("moon"))
-self.assertAlmostEquals(get_exected_idf(my_tfidf.get_num_docs(), 5),
-  my_tfidf.get_idf("said"))
-
-*/
 
 
 
