@@ -1,4 +1,4 @@
-var tokenizer = require('../lib/tokenizer');
+var tokenizer = require('../lib/token/regexp');
 
 var wordTok = new tokenizer.WordTokenizer()
 

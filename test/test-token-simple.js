@@ -1,4 +1,4 @@
-var tokenizer = require('../lib/tokenizer');
+var tokenizer = require('../lib/token/simple');
 
 var spaceToken = new tokenizer.SpaceTokenizer()
 
