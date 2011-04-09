@@ -32,7 +32,6 @@ exports.ends = function(test) {
 exports.cons = function(test) {
 	var stemmer = new porter.PorterStemmer();
 	stemmer.b = "querty";
-	
 	test.expect(6);	
 	test.equal(	stemmer.cons(0), true,"  querty[0] const");
 	test.equal(	stemmer.cons(1), false," querty[1] const");
@@ -76,6 +75,7 @@ exports.step1c = function(test) {
 	test.expect(2);			
 	test.equal(stemmer._testStem('happy',"step1c"), 'happi',"Stemmed word");
 	test.equal(stemmer._testStem('enjoy',"step1c"), 'enjoy',"Stemmed word");	
+	
 	test.done();
 }
 
@@ -105,6 +105,7 @@ exports.step2 = function(test) {
 	test.equal(stemmer._testStem('formaliti',"step2"), 'formal',"Stemmed word");
 	test.equal(stemmer._testStem('sensitiviti',"step2"), 'sensitive',"Stemmed word");
 	test.equal(stemmer._testStem('sensibiliti',"step2"), 'sensible',"Stemmed word");	
+	
 	test.done();
 }
 
@@ -148,13 +149,10 @@ exports.step4 = function(test) {
 	test.equal(stemmer._testStem('bowdlerize',"step4"), 'bowdler',"Stemmed word");			
 
 	test.done()
-	
 }
 
 exports.step5 = function(test) {
-	
 	test.expect(4);
-		
 	test.equal(stemmer._testStem('probate',"step5"), 'probat',"Stemmed word");
 	test.equal(stemmer._testStem('cease',"step5"), 'ceas',"Stemmed word");
 	test.equal(stemmer._testStem('controll',"step5"), 'control',"Stemmed word");
@@ -163,8 +161,11 @@ exports.step5 = function(test) {
 }
 
 exports.stemWord = function(test) {
+	test.expect(2);
+
+	test.equal(stemmer.stem("Cats"), 'Cat',"Respect Capitals");	
+	test.equal(stemmer.stem("Trophies"), 'Trophi',"Respect Capitals");
 	
-	test.expect(0);			
 	test.done();
 }
 

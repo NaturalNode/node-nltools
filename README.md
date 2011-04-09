@@ -22,7 +22,10 @@ Download, fork or clone the code, setup the 2 dependancies below.
 ### Tokenization 
    - SpaceTokenizer
    - TabTokenizer
+   - RegexpTokenizer   
    - WordTokenizer
+   - WordPunctTokenizer (new)
+   - TreeBank Tokenizer (new)
    
 ### POS Tagger (Parts of Speech Tagger)
    - HunposTagger
@@ -46,8 +49,13 @@ Download, fork or clone the code, setup the 2 dependancies below.
 ### Sentiment Analysis
  - http://en.wikipedia.org/wiki/Sentiment_analysis
  
-### Implement YAGO (in lue of WikiPedia)
- - http://www.mpi-inf.mpg.de/yago-naga/yago/
+### NLU
+
+#### Implement YAGO 
+ This is started and well underway - http://www.mpi-inf.mpg.de/yago-naga/yago/
+
+#### Wordnet Bindings
+#### DBPedia Bindings
  
 ## Other NODE Projects of Interest
  - http://harthur.github.com/brain/
