@@ -57,7 +57,7 @@ exports.testAddCorpus = function(test) {
 	new tfiObj(
 		'/Users/ironman/projects/node_projects/node-nltools/lib/tfidf/tfidf_testcorpus.txt',
 		null,
-		DEFAULT_IDF_UNITTEST,
+		1,
 		function(my_tfidf) {	
 
 			test.expect(7);
@@ -67,7 +67,7 @@ exports.testAddCorpus = function(test) {
 			test.equal(get_exected_idf(my_tfidf.get_num_docs(), 1), my_tfidf.get_idf("moon"));
 			test.equal(get_exected_idf(my_tfidf.get_num_docs(), 5), my_tfidf.get_idf("said"));
 			
-			my_tfidf.add_input_document("water, moon")			
+			my_tfidf.add_input_document("water, moon")
 
 			test.equal(get_exected_idf(my_tfidf.get_num_docs(), 1),my_tfidf.get_idf("water"))
 			test.equal(get_exected_idf(my_tfidf.get_num_docs(), 2),my_tfidf.get_idf("moon"))
