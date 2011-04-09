@@ -1,0 +1,20 @@
+{
+  "name": "node-nltools",
+  "description": "Natural Language tools for Processing, Understanding and Generation",
+  "version": "0.0.3",
+  "author": "Rob Ellis <rob@silentrob.me>",
+  "contributors": [ 
+    { "name": "Rob Ellis", "email": "rob@silentrob.me" }
+  ],
+  "dependencies": {
+    "underscore" : "*",
+    "nodeunit" : "*"
+  },
+  "keywords": ["nlp", "natural", "language", "nlg", "token", "stemmer", "pos"],
+  "repository": {
+  "type": "git",
+  "url":"git://github.com/silentrob/node-nltools"
+  },
+  "main": "index",
+  "engines": { "node": ">= 0.4.1 < 0.5.0" }
+}
