@@ -39,6 +39,13 @@ Download, fork or clone the code, setup the 2 dependancies below.
  
 ### Sentence Analyses
   - Break a sentence down into different parts, subject, predicate etc.
+
+### Stemmer
+  - Using the Porter Stemming Algorithm.
+  - More information about the algorithm can be found here - http://tartarus.org/~martin/PorterStemmer/.
+  
+### TF-IDF (term frequency–inverse document frequency)
+  - http://en.wikipedia.org/wiki/Tf%E2%80%93idf
  
 ## What's Not yet Included aka TODO
 
@@ -48,6 +55,9 @@ Download, fork or clone the code, setup the 2 dependancies below.
 
 ### Sentiment Analysis
  - http://en.wikipedia.org/wiki/Sentiment_analysis
+ 
+### Bayes' theorem
+ - http://en.wikipedia.org/wiki/Bayes'_theorem
  
 ### NLU
 
