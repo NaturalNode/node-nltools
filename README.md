@@ -49,15 +49,12 @@ Download, fork or clone the code, setup the 2 dependancies below.
   
 ### n-gram
   - http://en.wikipedia.org/wiki/N-gram
-  
   - bigrams
   - trigrams
   
   
-  `
-Util.bigram(['The','fox','ran','fast']); //  [ [ 'The', 'fox' ],[ 'fox', 'ran' ],[ 'ran', 'fast' ] ]
-Util.trigram(['The','fox','ran','fast']); // [ [ 'The', 'fox', 'ran' ], [ 'fox', 'ran', 'fast' ] ]
-  `
+    Util.bigram(['The','fox','ran','fast']); //  [ [ 'The', 'fox' ],[ 'fox', 'ran' ],[ 'ran', 'fast' ] ]
+    Util.trigram(['The','fox','ran','fast']); // [ [ 'The', 'fox', 'ran' ], [ 'fox', 'ran', 'fast' ] ]
  
 ## What's Not yet Included aka TODO
 
