@@ -46,6 +46,18 @@ Download, fork or clone the code, setup the 2 dependancies below.
   
 ### TF-IDF (term frequency–inverse document frequency)
   - http://en.wikipedia.org/wiki/Tf%E2%80%93idf
+  
+### n-gram
+  - http://en.wikipedia.org/wiki/N-gram
+  
+  - bigrams
+  - trigrams
+  
+  
+  `
+Util.bigram(['The','fox','ran','fast']); //  [ [ 'The', 'fox' ],[ 'fox', 'ran' ],[ 'ran', 'fast' ] ]
+Util.trigram(['The','fox','ran','fast']); // [ [ 'The', 'fox', 'ran' ], [ 'fox', 'ran', 'fast' ] ]
+  `
  
 ## What's Not yet Included aka TODO
 
