@@ -13,10 +13,12 @@ new WordNetCorpusReader({root:'./wordnet'},function(wn){
     console.log('getting a synset for go');
     console.log(move_synset.name, move_synset.pos, move_synset.lexname);
     console.log(move_synset.lemma_names);
-  
-    // TODO add these in
     console.log(move_synset.definition);
-    console.log(move_synset.examples);          
+    console.log(move_synset.examples);
+    
+    move_synset.verbGroups(function(group){
+      console.log(group.name)
+    })
   });
   
   // console.log("Navigations:");
