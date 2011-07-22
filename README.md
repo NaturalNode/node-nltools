@@ -56,6 +56,10 @@ Download, fork or clone the code, setup the 2 dependancies below.
     Util.trigram(['The','fox','ran','fast']); // [ [ 'The', 'fox', 'ran' ], [ 'fox', 'ran', 'fast' ] ]`
     
  
+### Wordnet Bindings
+ - Wordnet bindings have been started, you must download the wordnet database before you can play with it.
+ 
+ 
 ## What's Not yet Included aka TODO
 
 ### Sentence Boundary Detection
@@ -73,7 +77,7 @@ Download, fork or clone the code, setup the 2 dependancies below.
 #### Implement YAGO 
  This is started and well underway - http://www.mpi-inf.mpg.de/yago-naga/yago/
 
-#### Wordnet Bindings
+
 #### DBPedia Bindings
  
 ## Other NODE Projects of Interest

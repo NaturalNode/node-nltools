@@ -21,17 +21,21 @@ new WordNetCorpusReader({root:'./wordnet'},function(wn){
     })
   });
   
+  // var fn = function(nav){
+  //   console.log(nav.name);
+  // }
+  // 
   // console.log("Navigations:");
   // wn.synset('travel.v.01',function(S){
-  //   console.log(S.hypernyms())
+  //   S.hypernyms(fn)
   // });
   
   // wn.synset('travel.v.02',function(S){
-  //   console.log(S.hypernyms())
+  //   S.hypernyms(fn)
   // });
   // 
   // wn.synset('travel.v.03',function(S){
-  //   console.log(S.hypernyms())
+  //   S.hypernyms(fn)
   // });
   
 });
