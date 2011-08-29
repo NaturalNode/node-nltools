@@ -1,5 +1,9 @@
 # Natural Language Tools
 
+## Update
+
+This project is being merged into Natural, Visit [https://github.com/NaturalNode/natural](https://github.com/NaturalNode/natural) for the latest changes.
+
 ## Abstract
 
 After leaning about IBM's Watson *1, and reading Mind vs Machine *2, I wanted to better understand the state of Natural Language Processing, 
@@ -37,6 +41,7 @@ Download, fork or clone the code, setup the 2 dependancies below.
     - Download and run the Java Server
     - java -mx600m -cp stanford-ner.jar edu.stanford.nlp.ie.NERServer -loadClassifier classifiers/ner-eng-ie.crf-4-conll-distsim.ser.gz -port 8000
  
+
 ### Sentence Analyses
   - Break a sentence down into different parts, subject, predicate etc.
 
